@@ -1,9 +1,11 @@
 //Uri
-//1003
-#include<stdio.h>
-int main(){
-    int A, B;
+//1004
+#include <stdio.h>
+int main()
+{
+    int A, B, PROD;
     scanf("%d%d", &A, &B);
-    printf("SOMA = %d\n", A+B);
+    PROD = A*B;
+    printf("PROD = %d\n", PROD);
     return 0;
 }
