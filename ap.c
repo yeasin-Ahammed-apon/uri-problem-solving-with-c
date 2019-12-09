@@ -1,11 +1,10 @@
 //Uri
-//1004
-#include <stdio.h>
-int main()
-{
-    int A, B, PROD;
-    scanf("%d%d", &A, &B);
-    PROD = A*B;
-    printf("PROD = %d\n", PROD);
-    return 0;
+//1005
+#include<stdio.h>
+int main(){
+   float A,B,med;
+   scanf("%f %f",&A,&B);
+   med=((A*3.5)+(B*7.5))/(3.5+7.5);
+   printf("MEDIA = %.5f\n",med);
+   return 0;
 }
