@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
- int a,b;
- float c;
- scanf("%d%d%f", &a, &b, &c);
- printf("NUMBER = %d\n", a);
- printf("SALARY = U$ %.2f\n", b * c);
- return 0;
-
+  double salary,value,
+  TOTAL;
+  char name;
+  scanf("%s %lf %lf",&name,&salary,&value);
+  TOTAL = salary+value*.15;
+  printf("TOTAL = R$ %.2lf\n",TOTAL);
+  return 0;
 }
