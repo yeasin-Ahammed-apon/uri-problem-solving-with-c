@@ -1,10 +1,9 @@
 //Uri
-//1002
+//1003
 #include<stdio.h>
 int main(){
-double A,n=3.14159,R;
-scanf("%lf",&R);
-A=n*(R*R);
-printf("A=%.4lf\n",A);
+    int A, B;
+    scanf("%d%d", &A, &B);
+    printf("SOMA = %d\n", A+B);
     return 0;
 }
