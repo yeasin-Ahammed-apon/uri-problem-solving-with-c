@@ -1,11 +1,9 @@
-//Uri
-//1005
 #include <stdio.h>
-int main()
-{
- double a, b, c, media;
- scanf("%lf%lf%lf", &a, &b, &c);
- media = (a/10 * 2) + (b/10 * 3) + (c/10 * 5);
- printf("MEDIA = %.1lf\n", media);
- return 0;
+int main() {
+    int A , B , C , D, difference;
+    scanf("%d %d %d %d", &A , &B ,&C, &D);
+    difference=((A * B) - (C * D));
+    printf("DIFERENCA = %d\n", difference);
+    return 0;
+
 }
