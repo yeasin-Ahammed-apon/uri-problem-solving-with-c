@@ -1,10 +1,10 @@
 //Uri
-//1001
+//1002
 #include<stdio.h>
 int main(){
-int A,B,X;
-scanf("%d%d",&A,&B);
-X=A+B;
-printf("%d",X);
+double A,n=3.14159,R;
+scanf("%lf",&R);
+A=n*(R*R);
+printf("A=%.4lf\n",A);
     return 0;
 }
