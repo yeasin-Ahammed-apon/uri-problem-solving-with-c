@@ -1,10 +1,9 @@
 #include<stdio.h>
 int main(){
-int a,b,c,ab,abc;
-scanf("%d %d %d",&a,&b,&c);
-ab=(a+b+abs(a-b))/2;
-abc=(ab+c+abs(ab-c))/2;
-printf("%d eh o maior\n",abc);
+int X;
+float Y,K;
+scanf("%d%f",&X,&Y);
+K=X/Y;
+printf("%.3f km/l\n",K);//kilometer per liter
 return 0;
-
 }
