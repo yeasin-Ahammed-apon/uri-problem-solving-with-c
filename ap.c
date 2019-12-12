@@ -2,13 +2,13 @@
 int main(){
 int n,h;
 scanf("%d",&n);
-h=n/3600;
-printf("%d:",h);
-n=n%3600;
-h=n/60;
-printf("%d:",h);
-n=n%60;
-printf("%d\n",n);
-//1019
+h=n/365;
+printf("%d ano(s)\n",h);
+n=n%365;
+h=n/30;
+printf("%d mes(es)\n",h);
+n=n%30;
+printf("%d dia(s)\n",n);
+//1020
 return 0;
 }
