@@ -1,11 +1,26 @@
 #include<stdio.h>
 int main(){
-int A,B,C,D;
-scanf("%d%d%d%d",&A,&B,&C,&D);
-if((B>C)&&(D>A)&&((C+D)>(A+B))&&(C>0)&&(D>0)&&(A%2==0)){
-    printf("Valores aceitos\n");
-}else{
-printf("Valores nao aceitos\n");
+int X,Y;
+float l;
+scanf("%d%d",&X,&Y);
+if(X==1){
+        l=Y*4.00;
+    printf("Total: R$ %.2f\n",l);
+}else if(X==2){
+l=Y*4.50;
+    printf("Total: R$ %.2f\n",l);
+}
+else if(X==3){
+l=Y*5.00;
+    printf("Total: R$ %.2f\n",l);
+}
+else if(X==4){
+l=Y*2.00;
+    printf("Total: R$ %.2f\n",l);
+}
+else if(X==5){
+l=Y*1.50;
+    printf("Total: R$ %.2f\n",l);
 }
 return 0;
 }
