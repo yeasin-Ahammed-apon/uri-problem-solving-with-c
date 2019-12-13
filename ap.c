@@ -1,14 +1,11 @@
 #include<stdio.h>
 int main(){
-int n,h;
-scanf("%d",&n);
-h=n/365;
-printf("%d ano(s)\n",h);
-n=n%365;
-h=n/30;
-printf("%d mes(es)\n",h);
-n=n%30;
-printf("%d dia(s)\n",n);
-//1020
+int A,B,C,D;
+scanf("%d%d%d%d",&A,&B,&C,&D);
+if((B>C)&&(D>A)&&((C+D)>(A+B))&&(C>0)&&(D>0)&&(A%2==0)){
+    printf("Valores aceitos\n");
+}else{
+printf("Valores nao aceitos\n");
+}
 return 0;
 }
