@@ -1,26 +1,21 @@
 #include<stdio.h>
 int main(){
-int X,Y;
-float l;
-scanf("%d%d",&X,&Y);
-if(X==1){
-        l=Y*4.00;
-    printf("Total: R$ %.2f\n",l);
-}else if(X==2){
-l=Y*4.50;
-    printf("Total: R$ %.2f\n",l);
-}
-else if(X==3){
-l=Y*5.00;
-    printf("Total: R$ %.2f\n",l);
-}
-else if(X==4){
-l=Y*2.00;
-    printf("Total: R$ %.2f\n",l);
-}
-else if(X==5){
-l=Y*1.50;
-    printf("Total: R$ %.2f\n",l);
+double x,y;
+scanf("%lf%lf",&x,&y);
+if(x==0){
+printf("Eixo X\n");
+}else if ( y == 0 ){
+printf( "Eixo Y\n" );
+}if(x>0&&y>0){
+printf("Q1\n");
+}else if(x<0&&y>0){
+printf("Q2\n");
+}else if(x<0&&y<0){
+printf("Q3\n");
+}else if(x>0&&y<0){
+printf("Q4\n");
+}else if(x=y=0){
+printf("Origem\n");
 }
 return 0;
 }
