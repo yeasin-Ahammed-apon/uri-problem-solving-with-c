@@ -1,10 +1,13 @@
 #include<stdio.h>
 int main(){
-int a,b,c,f,s,t;
-scanf("%d%d%d",&a,&b,&c);
-if(a<b&&a<c){f=a;if(b<c){s=b; t=c;}else{s=c; t=b;}}
-else if(b<a&&b<c){f=b;if(a<c){s=a; t=c;}else{s=c; t=a;}}
-else if(c<a&&c<b){f=c;if(b<a){s=b; t=a;}else{s=a; t=b;}}
-printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",f,s,t,a,b,c);
+float A,B,C,p,t;
+scanf("%f%f%f",&A,&B,&C);
+if(A+B>C&&B+C>A&&A+C>B){
+        p=A+B+C;
+    printf("Perimetro = %.1f\n",p);
+}else{
+    t=0.5*(A+B)*C;
+printf("Area = %.1f\n",t);
+}
 return 0;
 }
