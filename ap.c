@@ -1,5 +1,6 @@
 #include<stdio.h>
 int main(){
+    //nope no update
 double x,y;
 scanf("%lf%lf",&x,&y);
 if(x==0){
