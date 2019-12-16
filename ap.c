@@ -1,12 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int A,B;
-    scanf("%d%d",&A,&B);
-    if (B%A==0||A%B==0){
-        printf("Sao Multiplos\n");
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a>b){
+        a=(24-a);
+        b=a+b;
+        printf("O JOGO DUROU %d HORA(S)\n",b);
+    }else if(b>a){
+    b=b-a;
+    printf("O JOGO DUROU %d HORA(S)\n",b);
     }else{
-        printf("Nao sao Multiplos\n");
+    printf("O JOGO DUROU %d HORA(S)\n",24);
     }
-    return 0;
+
 }
