@@ -1,14 +1,16 @@
-#include<stdio.h>
+#include <stdio.h>
 int main(){
-float a,b,c,d,e,f;
-int p;
-scanf("%f%f%f%f%f%f",&a,&b,&c,&d,&e,&f);
-if(a>0){++p;}
-if(b>0){++p;}
-if(c>0){++p;}
-if(d>0){++p;}
-if(e>0){++p;}
-if(f>0){++p;}
-printf("%d valores positivos\n",p);
-return 0;
+    int i, odd = 0,even = 0, pos = 0, neg = 0, num;
+	for ( i = 0; i < 5; i++ )	{
+		scanf("%d",&num);
+		if ( num % 2 == 0 ){even++;}
+		else {odd++;}
+		if ( num > 0 ) pos++;
+		if ( num < 0 ) neg++;
+	}
+	printf("%d valor(es) par(es)\n",even);
+	printf("%d valor(es) impar(es)\n",odd);
+	printf("%d valor(es) positivo(s)\n",pos);
+    printf("%d valor(es) negativo(s)\n",neg);
+	return 0;
 }
