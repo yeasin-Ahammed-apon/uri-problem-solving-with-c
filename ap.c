@@ -1,9 +1,23 @@
 #include <stdio.h>
 int main(){
-int n, i = 2;
+int n, i, num;
 	scanf("%d",&n);
-	for ( ; i <= n; i += 2 )
-		printf("%d^2 = %d\n",i,i * i);
-
-	return 0;
+	for ( i = 0; i < n; i++ ){
+		scanf("%d",&num);
+		if ( num == 0 ){
+			printf("NULL\n");
+		}else{
+			if( num % 2 ){
+			    printf("ODD");
+				}else{
+                printf("EVEN");
+			}
+			if ( num > 0 ){
+                printf(" POSITIVE\n");
+			}else{
+                printf(" NEGATIVE\n");
+			}
+		}
+	}
+    return 0;
 }
