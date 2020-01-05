@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main(){
-	int n, i;
+int n, i = 2;
 	scanf("%d",&n);
-	n = ( n % 2 ) ? n : n + 1;
-	for ( i = n; i <= n + 10; i += 2 )
-		printf("%d\n",i);
+	for ( ; i <= n; i += 2 )
+		printf("%d^2 = %d\n",i,i * i);
+
 	return 0;
 }
